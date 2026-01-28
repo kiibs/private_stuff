@@ -1,4 +1,4 @@
-/* STYLES.CSS COMPLETO CON TARJETAS EN FORMA DE CORAZÓN Y MARCO COSIDO */
+/* STYLES.CSS */
 :root {
   --beige: #f5efe6;
   --burgundy: #7a1f2b;
@@ -30,23 +30,27 @@ body {
   justify-content: center;
   z-index: 9999;
 }
+
 .loader-heart {
   font-size: 48px;
   color: var(--burgundy);
   margin-bottom: 20px;
 }
+
 .loader-bar {
   width: 60%;
   height: 12px;
   border: 1px solid var(--burgundy);
   position: relative;
 }
+
 .loader-fill {
   height: 100%;
   width: 0;
   background: var(--burgundy);
   animation: load 3s forwards;
 }
+
 @keyframes load {
   to {
     width: 100%;
@@ -60,6 +64,7 @@ main {
   align-items: center;
   text-align: center;
 }
+
 section {
   width: 100%;
   max-width: 1100px;
@@ -71,13 +76,16 @@ section {
   font-family: "Alex Brush", cursive;
   text-align: center;
 }
+
 .header-line {
   font-family: "Montserrat", sans-serif;
+  font-size: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
 }
+
 .small {
   font-size: 14px;
 }
@@ -91,16 +99,19 @@ section {
 .right {
   text-align: right;
 }
+
 .valentine-edition {
   font-family: "Monsieur La Doulaise", cursive;
   font-size: 80px;
   margin: 20px 0;
 }
+
 .line {
   height: 1px;
   background: var(--burgundy);
   margin: 20px 0;
 }
+
 .love-repeat {
   font-style: italic;
   font-size: 18px;
@@ -108,7 +119,6 @@ section {
   overflow: hidden;
 }
 
-/* HERO IMAGE CON MARCO */
 .hero-image {
   width: 100%;
   max-width: 1100px;
@@ -116,66 +126,27 @@ section {
   display: block;
   margin: auto;
   filter: grayscale(100%);
-  border: 4px dashed var(--white); /* borde cosido */
-  border-radius: 30px;
+  border: 7px dashed var(--white);
+  border-radius: 5px;
   position: relative;
   overflow: visible;
   transition: filter 0.5s ease;
 }
-.hero-image::before {
-  content: "";
-  position: absolute;
-  inset: -10px;
-  border-radius: 50% / 20%;
-  border: 4px solid var(--white); /* montañitas */
-  pointer-events: none;
-  box-sizing: border-box;
-}
 
-/* COUNTDOWN CARDS EN FORMA DE CORAZÓN */
+/* COUNTDOWN CARDS */
 .countdown-section {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
-  margin-top: 40px;
 }
 .countdown-card {
-  position: relative;
-  width: 150px;
-  height: 150px;
   background: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid var(--burgundy);
+  padding: 70px 80px;
+  text-align: center;
   font-family: "Alex Brush", cursive;
   font-size: 38px;
-  color: var(--burgundy);
-  text-align: center;
-  border: 3px dashed var(--white); /* borde cosido */
-  overflow: visible;
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 50% 50% 50% 50%;
-}
-.countdown-card::before,
-.countdown-card::after {
-  content: "";
-  position: absolute;
-  top: -50px;
-  width: 75px;
-  height: 75px;
-  background: var(--white);
-  border: 3px dashed var(--white); /* borde cosido de los semicírculos */
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.countdown-card::before {
-  left: 0;
-}
-.countdown-card::after {
-  right: 0;
 }
 .countdown-card .label {
   font-family: "Montserrat", sans-serif;
@@ -192,16 +163,10 @@ section {
 
 /* FAVORITES TITLE */
 .favorites-title h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 78px;
+  margin-top: 100px;
 }
-.favorites-title .cursive {
-  font-family: "Alex Brush", cursive;
-  font-size: 36px;
-  color: var(--burgundy-light);
-  margin-left: 10px;
-}
-
 /* GRID */
 .qualities {
   display: grid;
@@ -214,31 +179,21 @@ section {
   padding: 30px 20px;
   font-style: italic;
   background: rgba(255, 255, 255, 0.4);
-  border-radius: 30px;
-  position: relative;
-  overflow: visible;
-}
-.qualities div::before {
-  content: "";
-  position: absolute;
-  inset: -5px;
-  border-radius: 50% / 20%;
-  border: 3px dashed var(--white);
-  pointer-events: none;
-  box-sizing: border-box;
 }
 
 /* QUESTION */
 .final-question {
   margin-top: 60px;
+  line-height: 0.7;
 }
 .question-big {
-  font-size: 64px;
+  font-family: "Alex Brush", cursive;
+  font-size: 254px;
 }
 .question-big .valentine {
-  font-family: "Alex Brush", cursive;
-  font-size: 80px;
-  color: var(--burgundy-light);
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 250px;
+  color: var(--burgundy);
 }
 
 .buttons {
@@ -247,6 +202,7 @@ section {
   justify-content: center;
   margin-top: 40px;
 }
+
 button {
   padding: 14px 40px;
   font-size: 18px;
@@ -255,6 +211,7 @@ button {
   color: var(--burgundy);
   cursor: pointer;
 }
+
 #yes:hover {
   background: var(--burgundy);
   color: var(--white);
@@ -271,7 +228,6 @@ button {
   }
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .qualities {
     grid-template-columns: 1fr;
@@ -286,9 +242,6 @@ button {
     font-size: 64px;
   }
   .countdown-card {
-    font-size: 28px;
-    width: 120px;
-    height: 120px;
-    padding: 40px;
+    font-size: 22px;
   }
 }
