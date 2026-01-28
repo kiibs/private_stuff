@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Great+Vibes&family=Alex+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- LOADER -->
+    <div id="loader">
+      <div class="loader-heart">❤</div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+
+    <main id="content">
+      <!-- NEWSPAPER -->
+      <section class="newspaper">
+        <div class="header-line">
+          <div class="small left">EDICIÓN ESPECIAL</div>
+          <div class="center">1er San Valentín</div>
+          <div class="small right">FEBRERO 2026</div>
+        </div>
+        <div class="line"></div>
+        <h1 class="valentine-edition">Valentine Edition</h1>
+        <div class="line"></div>
+        <div class="love-repeat">
+          te quiero · te quiero · te quiero · te quiero · te quiero · te quiero
+          · te quiero · te quiero · te quiero · te quiero · te quiero · te
+          quiero
+        </div>
+        <div class="line"></div>
+      </section>
+
+      <!-- IMAGE -->
+      <img src="IMG.jpg" alt="Nuestra foto" class="hero-image" />
+
+      <!-- LOVE TEXT -->
+      <section>
+        <p class="love-text">
+          Desde que estás en mi vida todo es más bonito. <br />Cada día que pasa
+          tengo más claro que eres el amor de mi vida. <br />
+          Me gustaría mucho si pudieses reservarme un ratito de tu día en:
+        </p>
+      </section>
+
+      <!-- COUNTDOWN -->
+      <section class="countdown-section">
+        <div class="countdown-card">
+          <div class="time" id="days">0</div>
+          <div class="label">Días</div>
+        </div>
+        <div class="countdown-card">
+          <div class="time" id="hours">0</div>
+          <div class="label">Horas</div>
+        </div>
+        <div class="countdown-card">
+          <div class="time" id="minutes">0</div>
+          <div class="label">Minutos</div>
+        </div>
+        <div class="countdown-card">
+          <div class="time" id="seconds">0</div>
+          <div class="label">Segundos</div>
+        </div>
+      </section>
+
+      <!-- FAVORITES TITLE -->
+      <section class="favorites-title">
+        <h2>
+          <span>Todo lo que me gusta sobre ti</span>
+          <span class="cursive">💖</span>
+        </h2>
+      </section>
+
+      <!-- QUALITIES -->
+      <section>
+        <div class="qualities">
+          <div>Tu sonrisa</div>
+          <div>Tu paciencia</div>
+          <div>Tu forma de querer</div>
+          <div>Cómo me miras</div>
+          <div>Tu sentido del humor</div>
+          <div>Tu apoyo</div>
+          <div>Tu voz</div>
+          <div>Tu ternura</div>
+          <div>Tu corazón</div>
+        </div>
+      </section>
+
+      <!-- QUESTION -->
+      <section class="final-question">
+        <div class="question-big">
+          Would you be my <span class="valentine">Valentine?</span>
+        </div>
+
+        <div class="buttons">
+          <button id="yes">Sí</button>
+          <button id="no">No</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
