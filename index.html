@@ -1,133 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Be My Valentine</title>
-
-    <!-- Google Fonts -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#281a27" />
+    <meta
+      name="description"
+      content="Una pequeña aventura para elegir nuestra cena de aniversario."
+    />
+    <title>Un año de nosotros ♥</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Great+Vibes&family=Alex+Brush&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- LOADER -->
-    <div id="loader">
-      <div class="loader-heart">❤</div>
-      <div class="loader-bar">
-        <div class="loader-fill"></div>
-      </div>
-    </div>
-
-    <main id="content">
-      <!-- NEWSPAPER -->
-      <section class="newspaper">
-        <div class="header-line">
-          <div class="small left">EDICIÓN ESPECIAL</div>
-          <div class="center">1er San Valentín</div>
-          <div class="small right">FEBRERO 2026</div>
-        </div>
-        <div class="line"></div>
-        <h1 class="valentine-edition">Valentine Edition</h1>
-        <div class="line"></div>
-        <div class="love-repeat">
-          te quiero · te quiero · te quiero · te quiero · te quiero · te quiero
-          · te quiero · te quiero · te quiero · te quiero · te quiero · te
-          quiero
-        </div>
-        <div class="line"></div>
-      </section>
-
-      <!-- IMAGE -->
-      <img src="IMG.jpg" alt="Nuestra foto" class="hero-image" />
-
-      <!-- LOVE TEXT -->
-      <section>
-        <p class="love-text">
-          Desde que estás en mi vida todo es más bonito. <br />Cada día que pasa
-          tengo más claro que eres el amor de mi vida. <br />
-          Me gustaría mucho si pudieses reservarme un ratito de tu día en:
-        </p>
-      </section>
-
-      <!-- COUNTDOWN -->
-      <section class="countdown-section">
-        <div class="countdown-card">
-          <div class="time" id="days">0</div>
-          <div class="label">Días</div>
-        </div>
-        <div class="countdown-card">
-          <div class="time" id="hours">0</div>
-          <div class="label">Horas</div>
-        </div>
-        <div class="countdown-card">
-          <div class="time" id="minutes">0</div>
-          <div class="label">Minutos</div>
-        </div>
-        <div class="countdown-card">
-          <div class="time" id="seconds">0</div>
-          <div class="label">Segundos</div>
+    <div class="grain"></div>
+    <header class="topbar">
+      <a class="brand" href="#">ours<span>♥</span></a
+      ><span class="top-note">UNA FECHA · DOS PERSONAS · MIL RECUERDOS</span
+      ><button id="lockBtn" class="lock-btn" hidden>Bloquear ♥</button>
+    </header>
+    <main>
+      <section id="gate" class="gate view">
+        <div class="gate-card">
+          <div class="eyebrow centered">
+            <span class="tiny-heart">♥</span> UNA SORPRESA PARA TI
+          </div>
+          <h1>Solo para<br /><em>nosotros.</em></h1>
+          <p>
+            Esta pequeña web guarda un plan muy especial. Introduce nuestra
+            palabra secreta para descubrirlo.
+          </p>
+          <form id="gateForm" class="gate-form">
+            <label class="sr-only" for="password">Palabra secreta</label
+            ><input
+              id="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="Nuestra palabra secreta"
+              required
+            /><button class="button button-primary" type="submit">
+              Entrar <span>→</span>
+            </button>
+          </form>
+          <p id="gateError" class="error" role="status"></p>
+          <p id="gateHint" class="gate-hint" role="status" hidden>
+            PISTA: lo mucho que te quiero
+          </p>
+          <div class="gate-foot">HECHO CON AMOR, PARA NUESTRO PRIMER AÑO</div>
         </div>
       </section>
+      <section id="app" class="view" hidden>
+        <section id="hero" class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <span class="tiny-heart">♥</span> JUEVES · 29 · 10 · 2026
+            </div>
+            <h1>Un año<br />de <em>nosotros.</em></h1>
+            <p class="hero-intro">
+              365 días de historias, risas y pequeños momentos. Ahora me toca
+              preparar una noche para recordar.
+            </p>
+            <div class="countdown-wrap">
+              <div id="countdown" class="countdown" aria-live="polite"></div>
+              <p id="countdownCaption">LA CUENTA ATRÁS PARA NUESTRA NOCHE</p>
+            </div>
+            <button id="startBtn" class="button button-primary">
+              Elegir nuestra cena <span>↗</span>
+            </button>
+          </div>
+          <div class="hero-art" aria-label="Ilustración de una cena romántica">
+            <div class="sun"></div>
+            <div class="art-circle"></div>
+            <div class="art-card">
+              <div class="art-label">A TABLE FOR TWO</div>
+              <div class="plate plate-back"></div>
+              <div class="plate plate-front">
+                <div class="plate-center"></div>
+              </div>
+              <div class="wine wine-one"><i></i></div>
+              <div class="wine wine-two"><i></i></div>
+              <div class="flower">✳</div>
+              <div class="art-date">29<br /><small>OCT</small></div>
+            </div>
+            <div class="floating-note note-one">una noche especial ✦</div>
+            <div class="floating-note note-two">tú + yo</div>
+            <!-- FOTO VUESTRA: coloca vuestra imagen en assets/foto-nuestra.jpg. Si tiene otro nombre, cambia la ruta del background-image en styles.css. -->
+            <div class="polaroid-area">
+              <div class="couple-photo" id="couplePolaroid">
+                <div class="polaroid-image-container">
+                  <img
+                    id="couplePhotoImage"
+                    class="couple-photo-image"
+                    src="assets/IMG_20260307_012756.jpg"
+                    alt="Una foto de nosotros"
+                    draggable="false"
+                  />
 
-      <!-- REPEATING PHRASE -->
-      <section class="love-repeat-section">
-        <div class="line"></div>
-        <div class="love-repeat">
-          Eres mi mundo · Eres mi mundo · Eres mi mundo · Eres mi mundo · Eres
-          mi mundo · Eres mi mundo · Eres mi mundo · Eres mi mundo · Eres mi
-          mundo · Eres mi mundo ·
-        </div>
-        <div class="line"></div>
-      </section>
+                  <div class="photo-placeholder" id="couplePhotoPlaceholder">
+                    <span>♡</span>
+                    <p>Nuestra foto favorita</p>
+                    <small>Un año de recuerdos juntos</small>
+                  </div>
+                </div>
 
-      <!-- FAVORITES TITLE -->
-      <section class="favorites-title">
-        <h2>
-          <span>Todo lo que me gusta sobre ti</span>
-        </h2>
-      </section>
-
-      <!-- QUALITIES -->
-      <section>
-        <div class="qualities">
-          <div>Your smile that brightens my days</div>
-          <div>La paciencia que tienes when I’m being crazy</div>
-          <div>The way you love me</div>
-          <div>The way you look at me like I’m your favorite view</div>
-          <div>Your sense of humor that makes me laugh nonstop</div>
-          <div>El apoyo que me das en every little thing</div>
-          <div>Your voice which feels safe</div>
-          <div>Tus abrazo que me hace olvidar todos los problemas</div>
-          <div>The way your heart beats in sync with mine</div>
-        </div>
-        <br /><br />
-        <p>Entre muchas otras cosas.</p>
-        <br /><br />
-        <div class="line"></div>
-      </section>
-
-      <!-- QUESTION -->
-      <p>Ahora sólo me queda preguntar...</p>
-      <section class="final-question">
-        <div class="question-big">
-          Would you be my <br /><span class="valentine">Valentine?</span>
-        </div>
-
-        <div class="buttons">
-          <button id="yes">Sí</button>
-          <button id="no">No</button>
-        </div>
+                <p class="polaroid-caption">me + you ♡</p>
+                <span class="drag-hint">✧ arrástrame ✧</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="quiz" class="quiz-section" hidden>
+          <div class="section-top">
+            <div class="eyebrow">VAMOS A SOÑAR UN POCO</div>
+            <span id="stepCounter">01 / 05</span>
+          </div>
+          <div class="progress"><span id="progressBar"></span></div>
+          <div id="questionMount"></div>
+          <div class="quiz-nav">
+            <button id="backBtn" class="button button-ghost">← Atrás</button
+            ><button id="nextBtn" class="button button-primary">
+              Siguiente →
+            </button>
+          </div>
+        </section>
+        <section id="results" class="results-section" hidden>
+          <div class="eyebrow">HEMOS ENCONTRADO VUESTRA VIBRA</div>
+          <h2>Una mesa para<br /><em>dos, por favor.</em></h2>
+          <p class="results-intro">
+            Estas opciones se han seleccionado de la lista que nos has dado. Los
+            precios son orientativos: revisad la carta y confirmad horarios y
+            reservas antes de ir.
+          </p>
+          <div id="resultStatus" class="status-line" role="status"></div>
+          <div id="restaurantGrid" class="restaurant-grid"></div>
+          <div class="more-options-wrap">
+            <button
+              id="moreOptionsBtn"
+              class="button button-ghost"
+              type="button"
+              hidden
+            >
+              Ver las demás opciones ↓
+            </button>
+          </div>
+          <div class="results-actions">
+            <button id="restartBtn" class="button button-ghost">
+              Volver a empezar</button
+            ><button id="refreshBtn" class="button button-primary">
+              Volver a calcular ↻
+            </button>
+          </div>
+        </section>
+        <footer>
+          <span>MADE FOR OUR FIRST YEAR</span><span>Madrid · 29.10.26 ♥</span>
+        </footer>
       </section>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>

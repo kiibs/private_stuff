@@ -1,0 +1,378 @@
+[
+  {
+    "id": "diurno",
+    "name": "Diurno",
+    "cuisine": [
+      "española",
+      "internacional",
+      "mediterránea"
+    ],
+    "priceMin": 25,
+    "priceMax": 35,
+    "area": "Chueca",
+    "vibe": [
+      "moderno",
+      "animado",
+      "versátil"
+    ],
+    "description": "Una opción versátil en Chueca con cocina española e internacional, coctelería y ambiente animado. Precio orientativo; revisad la carta actual.",
+    "url": "https://www.diurno.com/",
+    "menu": "https://www.thefork.es/restaurante/diurno-madrid-r30520/menu",
+    "budgetFit": "ajustado",
+    "tags": [
+      "cócteles",
+      "centro"
+    ],
+    "photo": "https://cdn.thefork.com/tf-lab/image/upload/w_1080%2Cc_fill%2Cq_auto%2Cf_auto/restaurant/facc5c1d-6d16-4460-aed6-eb9d59d45f95/ded35bf1-4210-4440-a0af-1c7467e98e03.jpg"
+  },
+  {
+    "id": "piotta",
+    "name": "Piotta Romana",
+    "cuisine": [
+      "italiana",
+      "pizza",
+      "romana"
+    ],
+    "priceMin": 25,
+    "priceMax": 40,
+    "area": "Chamberí · Ponzano",
+    "vibe": [
+      "casual",
+      "moderno",
+      "para compartir"
+    ],
+    "description": "Pizzas y focaccias romanas con combinaciones creativas; buena opción informal para compartir. Las pizzas de la carta consultada rondan los 12–16 € y los postres unos 6,50–7 €.",
+    "url": "https://www.piottaromana.com/",
+    "menu": "https://www.piottaromana.com/menu?menu=menu",
+    "budgetFit": "ajustado",
+    "tags": [
+      "pizza",
+      "focaccia"
+    ],
+    "photo": "https://static.wixstatic.com/media/cbccc7_0112563dcfb34330ac456b8dc09c34c2~mv2.jpg/v1/fill/w_640%2Ch_426%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/cbccc7_0112563dcfb34330ac456b8dc09c34c2~mv2.jpg"
+  },
+  {
+    "id": "gloria",
+    "name": "La Gloria de Montera",
+    "cuisine": [
+      "mediterránea",
+      "española",
+      "internacional"
+    ],
+    "priceMin": 20,
+    "priceMax": 30,
+    "area": "Sol · Gran Vía",
+    "vibe": [
+      "acogedor",
+      "casual",
+      "versátil"
+    ],
+    "description": "Cocina de mercado, platos mediterráneos tradicionales con toques modernos, en pleno centro. La información turística sitúa el precio en torno a 16–30 €; no admite reserva según Turismo Madrid, así que conviene confirmar la operativa actual.",
+    "url": "https://andilana.com/restaurantes/la-gloria-de-montera/",
+    "menu": "https://andilana.com/restaurantes/la-gloria-de-montera/",
+    "budgetFit": "ajustado",
+    "tags": [
+      "centro",
+      "cocina de mercado"
+    ]
+  },
+  {
+    "id": "meatpacking",
+    "name": "Meatpacking District",
+    "cuisine": [
+      "carne",
+      "americana",
+      "hamburguesas"
+    ],
+    "priceMin": 30,
+    "priceMax": 50,
+    "area": "Madrid · confirmar local exacto",
+    "vibe": [
+      "urbano",
+      "moderno",
+      "animado"
+    ],
+    "description": "Lo clasifico provisionalmente como opción de inspiración americana/carnívora por el nombre y la marca. No he podido confirmar con suficiente fiabilidad en las fuentes consultadas la carta, dirección y precio actuales: revisar antes de recomendarlo como opción definitiva.",
+    "url": "https://www.meatpackingdistrict.es/",
+    "menu": "https://www.meatpackingdistrict.es/",
+    "budgetFit": "por confirmar",
+    "tags": [
+      "verificar datos"
+    ]
+  },
+  {
+    "id": "shishimaru",
+    "name": "Menya Shishimaru",
+    "cuisine": [
+      "japonesa",
+      "ramen",
+      "asiática"
+    ],
+    "priceMin": 20,
+    "priceMax": 35,
+    "area": "Tetuán · Pintor Juan Gris",
+    "vibe": [
+      "casual",
+      "auténtico",
+      "informal"
+    ],
+    "description": "Restaurante japonés especializado en ramen. La web oficial confirma la dirección en Calle del Pintor Juan Gris, 4 y reservas por teléfono; precio medio orientativo por confirmar con la carta vigente.",
+    "url": "https://www.shishimaruspain.com/#menu",
+    "menu": "https://www.shishimaruspain.com/#menu",
+    "budgetFit": "probable",
+    "tags": [
+      "ramen"
+    ]
+  },
+  {
+    "id": "circolo",
+    "name": "Circolo Popolare Madrid",
+    "cuisine": [
+      "italiana",
+      "pizza",
+      "pasta"
+    ],
+    "priceMin": 35,
+    "priceMax": 55,
+    "area": "AZCA · Torre Picasso",
+    "vibe": [
+      "espectacular",
+      "animado",
+      "social"
+    ],
+    "description": "Gran trattoria italiana de decoración llamativa, platos generosos para compartir, pasta fresca y pizza napolitana. La marca la presenta también como apta para cenas románticas; el presupuesto de 30–50 € puede encajar según lo que pidáis.",
+    "url": "https://www.circolopopolare.com/restaurants/circolopopolare-madrid",
+    "menu": "https://www.circolopopolare.com/es/restaurantes/circolopopolare-madrid",
+    "budgetFit": "probable",
+    "tags": [
+      "para compartir",
+      "decoración"
+    ],
+    "photo": "https://cdn.sanity.io/images/aa3sekul/production/d229986a2fe1430dd3ef952a4c294ed56441794d-7243x4831.jpg?auto=format&fit=min&h=694&w=1300"
+  },
+  {
+    "id": "bulla",
+    "name": "Bulla",
+    "cuisine": [
+      "italiana",
+      "mediterránea",
+      "fusión"
+    ],
+    "priceMin": 35,
+    "priceMax": 55,
+    "area": "Madrid · confirmar dirección al reservar",
+    "vibe": [
+      "dine-and-dance",
+      "animado",
+      "social"
+    ],
+    "description": "Propuesta italiana y mediterránea contemporánea con concepto Dine & Dance: más adecuada si queréis una cena con música y ambiente animado que una velada silenciosa. Confirmad carta y precios actuales.",
+    "url": "https://bullamadrid.com/#carta",
+    "menu": "https://bullamadrid.com/#carta",
+    "budgetFit": "probable",
+    "tags": [
+      "música",
+      "celebración"
+    ]
+  },
+  {
+    "id": "caripen",
+    "name": "Caripén Bistro",
+    "cuisine": [
+      "francesa",
+      "mediterránea",
+      "internacional"
+    ],
+    "priceMin": 45,
+    "priceMax": 70,
+    "area": "Ópera · Plaza de la Marina Española",
+    "vibe": [
+      "romántico",
+      "íntimo",
+      "nocturno"
+    ],
+    "description": "Restaurante de ambiente íntimo y nocturno, descrito como mítico y discreto. La carta tiene entrantes de 15–22 €, pastas de 14–29 € y postres alrededor de 8 €; una cena completa puede superar los 50 € por persona.",
+    "url": "https://caripenmadrid.com/carta/",
+    "menu": "https://caripenmadrid.com/carta/",
+    "budgetFit": "puede-superar",
+    "tags": [
+      "cita especial",
+      "nocturno"
+    ]
+  },
+  {
+    "id": "royalthai",
+    "name": "Royal Thai Las Tablas",
+    "cuisine": [
+      "tailandesa",
+      "asiática"
+    ],
+    "priceMin": 25,
+    "priceMax": 35,
+    "area": "Las Tablas",
+    "vibe": [
+      "acogedor",
+      "tranquilo",
+      "clásico"
+    ],
+    "description": "Cocina tailandesa con curris, sopas y platos de arroz/tallarines. Precio medio publicado de unos 30 € por persona y menú degustación listado a 29 € en la fuente consultada.",
+    "url": "https://grupoaroythai.com/location/royal-thai-las-tablas/",
+    "menu": "https://www.thefork.es/restaurante/royal-thai-las-tablas-r58568/menu",
+    "budgetFit": "encaja",
+    "tags": [
+      "curris",
+      "menú degustación"
+    ]
+  },
+  {
+    "id": "thaiarturo",
+    "name": "Thai Arturo Soria",
+    "cuisine": [
+      "tailandesa",
+      "asiática"
+    ],
+    "priceMin": 30,
+    "priceMax": 40,
+    "area": "Arturo Soria",
+    "vibe": [
+      "sofisticado",
+      "tranquilo",
+      "acogedor"
+    ],
+    "description": "Restaurante tailandés de ambiente cuidado; la fuente consultada indica precio medio de 35 €. Su menú degustación publicado cuesta 38 € por persona, bebidas aparte, y también tiene menú de mediodía más económico.",
+    "url": "https://thaiarturosoria.com/",
+    "menu": "https://thaiarturosoria.com/menu-degustacion/",
+    "budgetFit": "encaja",
+    "tags": [
+      "menú degustación",
+      "cita especial"
+    ]
+  },
+  {
+    "id": "alfredos",
+    "name": "Alfredo's Barbacoa",
+    "cuisine": [
+      "americana",
+      "hamburguesas",
+      "barbacoa",
+      "carne"
+    ],
+    "priceMin": 25,
+    "priceMax": 40,
+    "area": "Madrid · consultar sucursal",
+    "vibe": [
+      "informal",
+      "casual",
+      "sin pretensiones"
+    ],
+    "description": "Hamburguesas, costillas BBQ, carnes y acompañamientos de estilo americano. Buena opción si queréis algo relajado; el gasto depende mucho de bebida y extras.",
+    "url": "https://alfredos-barbacoa.es/",
+    "menu": "https://alfredos-barbacoa.es/carta/",
+    "budgetFit": "probable",
+    "tags": [
+      "hamburguesas",
+      "BBQ"
+    ]
+  },
+  {
+    "id": "donzoko",
+    "name": "Donzoko",
+    "cuisine": [
+      "japonesa",
+      "asiática"
+    ],
+    "priceMin": 25,
+    "priceMax": 40,
+    "area": "Centro de Madrid · confirmar dirección",
+    "vibe": [
+      "tradicional",
+      "casual",
+      "auténtico"
+    ],
+    "description": "Restaurante japonés con carta de platos clásicos como tempura, soba/udon y nigiri. La carta consultada incluye tempura de 22 € y opciones de fideos alrededor de 12 €; el precio final depende de cuántos platos compartáis.",
+    "url": "https://donzoko.es/",
+    "menu": "https://donzoko.es/carta-donzoko",
+    "budgetFit": "probable",
+    "tags": [
+      "japonés tradicional"
+    ]
+  },
+  {
+    "id": "indianaroma",
+    "name": "Indian Aroma",
+    "cuisine": [
+      "india",
+      "asiática"
+    ],
+    "priceMin": 18,
+    "priceMax": 30,
+    "area": "Huertas · Ventura de la Vega",
+    "vibe": [
+      "acogedor",
+      "cálido",
+      "casual"
+    ],
+    "description": "Cocina india con opciones tandoori, curris, platos vegetarianos y opciones halal. Precio medio publicado de unos 18 €, así que es una alternativa que deja margen para pedir entrantes y postre.",
+    "url": "https://www.restauranteindianaroma.com/",
+    "menu": "https://www.thefork.es/restaurante/indian-aroma-r6977/menu",
+    "budgetFit": "ajustado",
+    "tags": [
+      "halal",
+      "vegetariano"
+    ]
+  },
+  {
+    "id": "lobbo",
+    "name": "Lobbo Cocina Bar",
+    "cuisine": [
+      "española",
+      "mediterránea",
+      "carne"
+    ],
+    "priceMin": 25,
+    "priceMax": 40,
+    "area": "Chamartín · Gabriel Lobo",
+    "vibe": [
+      "moderno",
+      "acogedor",
+      "versátil"
+    ],
+    "description": "Cocina española contemporánea con platos como steak tartar, pescado y carnes. Precio medio publicado de unos 25 € en TheFork; la carta de la terraza Lobbo es una ubicación distinta, por lo que conviene consultar la dirección exacta.",
+    "url": "https://restaurante.grupolobbo.com/",
+    "menu": "https://restaurante.grupolobbo.com/",
+    "budgetFit": "ajustado",
+    "tags": [
+      "steak tartar",
+      "cocina actual"
+    ]
+  },
+  {
+    "id": "nacha",
+    "name": "Nacha",
+    "cuisine": [
+      "argentina",
+      "carne",
+      "mediterránea",
+      "fusión"
+    ],
+    "priceMin": 30,
+    "priceMax": 45,
+    "area": "Conde Duque · Centro",
+    "vibe": [
+      "íntimo",
+      "acogedor",
+      "vintage",
+      "para compartir"
+    ],
+    "description": "Bistró de inspiración argentina y mediterránea con platitos para compartir, empanada de carne, cortes a la parrilla y vinos. El ambiente es cálido, íntimo y con aire vintage; el precio orientativo ronda los 35–40 € por persona, según bebidas y platos elegidos.",
+    "url": "https://www.instagram.com/nacha.madrid/?hl=en",
+    "menu": "https://guide.michelin.com/gb/en/comunidad-de-madrid/madrid/restaurant/nacha",
+    "budgetFit": "encaja",
+    "tags": [
+      "cocina argentina",
+      "para compartir",
+      "vinos"
+    ],
+    "photo": "https://media.timeout.com/images/106235770/1024/576/image.jpg"
+  }
+]

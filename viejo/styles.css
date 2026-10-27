@@ -1,0 +1,247 @@
+/* STYLES.CSS */
+:root {
+  --beige: #f5efe6;
+  --burgundy: #7a1f2b;
+  --burgundy-light: #9c2f3c;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--beige);
+  color: var(--burgundy);
+  overflow-x: hidden;
+}
+
+/* LOADER */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: var(--beige);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-heart {
+  font-size: 48px;
+  color: var(--burgundy);
+  margin-bottom: 20px;
+}
+
+.loader-bar {
+  width: 60%;
+  height: 12px;
+  border: 1px solid var(--burgundy);
+  position: relative;
+}
+
+.loader-fill {
+  height: 100%;
+  width: 0;
+  background: var(--burgundy);
+  animation: load 3s forwards;
+}
+
+@keyframes load {
+  to {
+    width: 100%;
+  }
+}
+
+/* MAIN CONTENT */
+main {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  max-width: 1100px;
+  padding: 80px 20px;
+}
+
+/* NEWSPAPER HEADER */
+.newspaper {
+  font-family: "Alex Brush", cursive;
+  text-align: center;
+}
+
+.header-line {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.small {
+  font-size: 14px;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+  flex: 1;
+}
+.right {
+  text-align: right;
+}
+
+.valentine-edition {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 80px;
+  margin: 20px 0;
+}
+
+.line {
+  height: 1px;
+  background: var(--burgundy);
+  margin: 20px 0;
+}
+
+.love-repeat {
+  font-style: italic;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin: auto;
+  filter: grayscale(100%);
+  border: 7px dashed var(--white);
+  border-radius: 5px;
+  position: relative;
+  overflow: visible;
+  transition: filter 0.5s ease;
+}
+
+/* COUNTDOWN CARDS */
+.countdown-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.countdown-card {
+  background: var(--white);
+  border: 1px solid var(--burgundy);
+  padding: 70px 80px;
+  text-align: center;
+  font-family: "Alex Brush", cursive;
+  font-size: 38px;
+}
+.countdown-card .label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: var(--burgundy);
+}
+
+.love-text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* FAVORITES TITLE */
+.favorites-title h2 {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 78px;
+  margin-top: 100px;
+}
+/* GRID */
+.qualities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.qualities div {
+  border: 1px solid var(--burgundy);
+  padding: 30px 20px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* QUESTION */
+.final-question {
+  margin-top: 60px;
+  line-height: 0.7;
+}
+.question-big {
+  font-family: "Alex Brush", cursive;
+  font-size: 254px;
+}
+.question-big .valentine {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 250px;
+  color: var(--burgundy);
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+button {
+  padding: 14px 40px;
+  font-size: 18px;
+  border: 1px solid var(--burgundy);
+  background: transparent;
+  color: var(--burgundy);
+  cursor: pointer;
+}
+
+#yes:hover {
+  background: var(--burgundy);
+  color: var(--white);
+}
+.heart {
+  position: fixed;
+  color: var(--burgundy);
+  animation: fly 1.5s ease-out forwards;
+}
+@keyframes fly {
+  to {
+    transform: translateY(-150px) scale(0);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .qualities {
+    grid-template-columns: 1fr;
+  }
+  .valentine-edition {
+    font-size: 48px;
+  }
+  .question-big {
+    font-size: 48px;
+  }
+  .question-big .valentine {
+    font-size: 64px;
+  }
+  .countdown-card {
+    font-size: 22px;
+  }
+}
