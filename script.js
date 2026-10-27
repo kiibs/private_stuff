@@ -496,7 +496,6 @@ $("#restartBtn").addEventListener("click", () => {
 });
 $("#refreshBtn").addEventListener("click", showResults);
 if (sessionStorage.getItem("anniversaryOpen") === "yes") showApp();
-
 document.addEventListener("DOMContentLoaded", () => {
   const polaroid = document.getElementById("couplePolaroid");
   const area = document.querySelector(".polaroid-area");
